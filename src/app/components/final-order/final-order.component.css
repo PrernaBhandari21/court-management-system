@@ -1,0 +1,29 @@
+label{
+    font-weight: 500;
+}
+
+form{
+    margin: 50px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: beige;
+}
+
+.submitBtn{
+    margin-top: 40px;
+    width: 200px;
+    font-size: 19px;
+}
+
+.roww{
+    margin-top: 13px;
+}
+
+.heading{
+    font-weight: 500;
+    margin-bottom: 0 !important;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,129 @@
+<h3 class="heading">
+Search By Case Type/ No./ Year
+</h3>
+
+<form id="my-form-id"  method="get">
+			
+       <!-- Case Status -->
+    
+    <div class=" row" >
+        <div>
+            <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+            align-items: center;">
+                <label style="flex-basis: 30%; font-size: 14px;">
+                    Case Status :
+                </label>
+                <div style="flex-basis: 70%;">
+                    <select id="caseStatus" name="caseStatus" class="form-control"  style="width: 100%;">
+                        <option value="select" >Select</option>
+                        <option value="<%= comHandle %>" >All</option>
+                        <option value="<%= colHandleAllCaseFile%>">Disposed</option>
+                        <option value="<%= colHandlePendingCases%>">Pending</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" row"  style="padding-top:10px">
+    <div >
+        <!-- Court Type -->
+    <div class="col-md-12 roww"  style=" display: flex; justify-content: space-between;
+    align-items: center;">		
+    <input type="hidden" id="filtername" name="filtername" value="casetype"/>
+    <input type="hidden" id="filtertype" name="filtertype" value="equals"/>
+    
+    <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">
+        <!-- <fmt:message key="jsp.search.courttype"/>  -->
+        Court Type : 
+    </label>
+    <div style="flex-basis: 70%;">
+        <select id="courttype" name="courttype" class="form-control" style="width: 100%;">
+            <option value="select" >Select</option>
+            <option value="criminal">Criminal</option>
+            <option value="civil">Civil</option>
+        </select>		
+    </div>
+        
+
+    </div>
+    
+    <!-- Case Type -->
+    <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 10px;">
+    
+            <!-- <label class="pull-left" ><fmt:message key="jsp.search.filter.casetype"/>:</label> -->
+            <label style="flex-basis: 30%; font-size: 14px;" class="pull-left" >Case Type :</label>
+
+            <div style="flex-basis: 70%;">
+                <div style="display: flex; align-content: center; justify-content: space-between;">
+                    <select id="filterquery" name="filterquery" class="form-control" style="width: 100%;">
+                    </select>
+                </div>
+        
+        </div>
+        
+    </div>
+
+    <!-- Case Number -->
+    <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+            align-items: center; padding-top: 10px;">
+            <input type="hidden" id="filter_field_1" name="filter_field_1" value="title"/>
+            <input type="hidden" id="filter_type_1" name="filter_type_1" value="equals"/>	
+
+                <label style="flex-basis: 30%; font-size: 14px;">
+                    Case Number :
+                </label>
+                <div style="flex-basis: 70%;">
+                            <input type="text" id="filter_value_1" style="width: 100%;" name="filter_value_1" size="10"   class="form-control"/>
+                </div>
+                
+            </div>
+
+    <!-- Case Year -->
+    <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+            align-items: center; padding-top: 10px;">
+            <input type="hidden" id="filter_field_1" name="filter_field_1" value="title"/>
+            <input type="hidden" id="filter_type_1" name="filter_type_1" value="equals"/>	
+
+                <label style="flex-basis: 30%; font-size: 14px;">
+                    Case Year :
+                </label>
+                <div style="flex-basis: 70%;">
+                    <input type="number" id="filter_value_2" name="filter_value_2" style="width: 100%;" min="1800" maxlength="4" oninput="maxLengthCheck(this)" class="form-control"/>
+                </div>
+                
+            </div>
+
+
+
+
+            
+        
+
+
+
+        
+
+
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-primary submitBtn">Submit</button>
+            </div>
+
+           
+            
+
+
+            </div> 	
+            
+            
+            <div class="row"></div>
+
+    </div>
+    
+ 
+        
+
+    </form>

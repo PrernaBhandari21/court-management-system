@@ -1,0 +1,59 @@
+<h3 class="heading">
+    Petitioner/Respondent
+    </h3>
+
+<form id="my-form-id"  method="get">
+		
+    <div class=" row" >
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;" >
+    <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Case Status</label>
+    <div style="flex-basis: 70%;">
+    <select id="caseStatus" name="caseStatus" class="form-control" style="width: 100%;">
+        <option value="select" >Select</option>
+        <option value="<%= comHandle%>">All</option>
+        <option value="<%= colHandleAllCaseFile%>">Disposed</option>
+        <option value="<%= colHandlePendingCases%>">Pending</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;" >
+    <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Petitioner/Respondent:</label>
+    <div style="flex-basis: 70%;">
+        <select id="filtername" name="filtername" class="form-control" style="width: 100%;">
+            <option value="pname">Petitioner</option>
+            <option value="rname">Respondent</option>
+            <option value="any">Any</option>
+        </select>
+    </div>
+
+    </div> 
+
+            
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+            <label style="flex-basis: 30%; font-size: 14px;" class="pull-left">Name:</label>
+
+<div style="flex-basis: 70%;">
+    <div style="display: flex; align-content: center; justify-content: space-between;">
+        <input type="text" id="filterquery" name="filterquery" size="45" style="width: 100%;" class="form-control"/>
+    
+    </div>
+    </div>
+
+
+
+    
+
+    </div>
+</div>
+  
+<div style="text-align: center;">
+    <button type="button" class="btn btn-primary submitBtn">Submit</button>
+</div>
+    
+    
+    </form>
