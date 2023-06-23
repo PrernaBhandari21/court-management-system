@@ -1,0 +1,60 @@
+<h3 class="heading">Books Search</h3>
+    
+    <form id="my-form-id" method="get">
+    <div class=" row" >
+                
+    <input type="hidden" id="redirectjsp" name="redirectjsp" value="/search/booksSearch.jsp"/>
+        
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <input type="hidden" id="filtername" name="filter_field_1" value="booksSubject"/>
+        <input type="hidden" id="filtertype" name="filter_type_1" value="equals"/>
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Book Subject:</label>
+
+        <div style="flex-basis: 70%;">
+
+        <input type="text" id="filterquery" name="filter_value_1" style="width: 100%;" size="45" class="form-control" autocomplete="off" 
+           />
+
+            </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <input type="hidden" id="filter_field_1" name="filter_field_2" value="booksTitle"/>
+        <input type="hidden" id="filter_type_1" name="filter_type_2" value="equals"/>		
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Book Title:</label>
+        <div style="flex-basis: 70%;">
+
+        <input type="text" id="filter_value_1" style="width: 100%;" autocomplete="off" name="filter_value_2" size="10"
+            class="form-control"
+           />
+            </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <input type="hidden" id="filter_field_2" name="filter_field_3" value="booksAuthor"/>
+        <input type="hidden" id="filter_type_2" name="filter_type_3" value="equals"/>		
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Book Author:</label>
+
+        <div style="flex-basis: 70%;">
+            <div style="display: flex; align-content: center; justify-content: space-between;">
+        <input type="text" id="filter_value_2" name="filter_value_3" size="10" 
+            class="form-control" autocomplete="off" style="width: 100%;"
+            />
+       
+        </div>
+        </div>
+        
+    </div>
+        
+    
+                
+    </div>
+
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary submitBtn">Submit</button>
+    </div>
+
+</form>

@@ -1,0 +1,53 @@
+<h3 class="heading">Free Text Search </h3>
+<form id="my-form-id" method="get">
+    <div class=" row" >
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+            <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Community *</label>
+
+            <div style="flex-basis: 70%;">
+
+            <select id="collection" name="collection" class="form-control" style="width: 100%;">
+                <option value="">Select</option>
+                <option value="<%= colHandleAllCaseFiles%>">All Case Files</option>
+                <option value="<%=colHandleAdminFiles%>">All Admin Files</option>
+                <option value="<%= colHandleGazette%>">Gazettes</option>
+            </select>
+            </div>
+    </div>
+    
+    <div  class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+            <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Collection *</label>
+            <div style="flex-basis: 70%;">
+
+            <select id="community" name="community" class="form-control" style="width: 100%;">
+                                </select>
+                            </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+    <label class="pull-left"  style="flex-basis: 30%; font-size: 14px;">Enter Any Text:</label>
+    <div style="flex-basis: 70%;">
+        <div style="display: flex; align-content: center; justify-content: space-between;">
+
+    <input type="text" id="tquery" name="query" style="width: 100%;" class="form-control"/>
+    
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; align-items: center; padding-top: 15px;">
+    <label class="pull-left" for="synonymCheckBox" style="flex-basis: 30%; font-size: 14px;">Synonym</label>
+    <input type="checkbox" id="synonymCheckBox" name="synonymCheckBox" value="Enabled">
+    </div>
+    
+
+    </div>
+    
+
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary submitBtn">Submit</button>
+    </div>
+    </form>

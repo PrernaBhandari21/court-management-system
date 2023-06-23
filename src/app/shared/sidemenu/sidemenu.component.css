@@ -1,8 +1,9 @@
-mat-toolbar {
+mat-toolbar{
     padding-inline: 25px;
-    color: #267fff;
-    background: #fff;
+    color: white;
+    /* background: #fff; */
     box-shadow: -9px 0 20px rgba(33, 38, 45, 0.1);
+    background: linear-gradient(#e66465, #9198e5);
 }
 mat-toolbar img {
     width: 100%;

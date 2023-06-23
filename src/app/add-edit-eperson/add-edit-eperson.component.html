@@ -1,0 +1,67 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+
+  <h3 style="text-align: center;">Add E-Person</h3>
+
+    <mat-form-field>
+      <mat-label>Select User</mat-label>
+      <mat-select formControlName="userType" (selectionChange)="onUserTypeChange()">
+        <mat-option *ngFor="let userType of userTypes" [value]="userType.name">
+          {{ userType.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <!-- Common fields -->
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="firstName" placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="lastName" placeholder="Last Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="phone" placeholder="Phone No.">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="language" placeholder="Enter Language">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="password" placeholder="Enter Password">
+    </mat-form-field>
+    <div>
+      <mat-checkbox formControlName="canLogIn">Can Log In</mat-checkbox>
+    </div>
+
+      
+  
+    <!-- Additional fields based on user type -->
+    <div *ngIf="form.get('userType')?.value === 'Admin User'">
+      <div>
+        <input  formControlName="photoId" placeholder="Photo ID" type="file">
+      </div>
+      <mat-form-field>
+        <input matInput formControlName="dateOfBirth" placeholder="Date of Birth" type="date">
+      </mat-form-field>
+      <!-- Add more admin user fields -->
+    </div>
+  
+    <div *ngIf="form.get('userType')?.value === 'Public User'">
+      <div>
+        <input formControlName="photoId" placeholder="Photo ID" type="file">
+      </div>
+      <mat-form-field>
+        <input matInput formControlName="dateOfBirth" placeholder="Date of Birth" type="date">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="aadharCardNumber" placeholder="Aadhar Card Number">
+      </mat-form-field>
+      <!-- Add more public user fields -->
+    </div>
+    
+    <!-- Add more conditions for other user types -->
+  
+    <button mat-button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>
+  

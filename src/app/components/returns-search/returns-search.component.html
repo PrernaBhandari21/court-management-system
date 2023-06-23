@@ -1,0 +1,31 @@
+<h3 class="heading">Returns Search</h3>
+
+<form id="my-form-id" method="get">
+    <div class=" row" align="center">
+                
+    <input type="hidden" id="redirectjsp" name="redirectjsp" value="/search/returnsSearch.jsp"/>
+        
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <input type="hidden" id="filtername" name="filter_field_1" value="returnsSrno"/>
+        <input type="hidden" id="filtertype" name="filter_type_1" value="equals"/>
+        <label style="flex-basis: 30%; font-size: 17px;" class="pull-left">Returns SR No:</label>
+
+        <div style="flex-basis: 70%;">
+            <div style="display: flex; align-content: center; justify-content: space-between;width: 100%;">
+
+    
+        <input type="text" style="width: 100%;" id="filterquery" name="filter_value_1" size="45" class="form-control" autocomplete="off" 
+            />
+            
+            </div>
+            </div>
+    </div>
+        
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary submitBtn">Submit</button>
+    </div>
+        
+                
+    </div>
+</form>

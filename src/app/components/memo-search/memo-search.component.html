@@ -1,0 +1,61 @@
+<h3 class="heading">Memo Search</h3>
+<form id="my-form-id"  method="get">
+    <div class=" row" >
+                
+    <input type="hidden" id="redirectjsp" name="redirectjsp" value="/search/memosSearch.jsp"/>
+        
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Memo Number:</label>
+        <div style="flex-basis: 70%;">
+
+        <input type="text" id="filterquery" style="width: 100%;" name="filter_value_1" size="45" class="form-control" autocomplete="off" 
+            />
+            </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">				<input type="hidden" id="filter_field_1" name="filter_field_2" value="memoTitle"/>
+        <input type="hidden" id="filter_type_1" name="filter_type_2" value="equals"/>		
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Memo Title:</label>
+        <div style="flex-basis: 70%;">
+
+        <input type="text" id="filter_value_1" style="width: 100%;" autocomplete="off" name="filter_value_2" size="10"
+            class="form-control" 
+            />
+            </div>
+    </div>
+    
+    <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+    align-items: center;">
+        <label style="flex-basis: 30%; font-size: 14px;">
+            Memo Date :
+        </label>
+        <div style="flex-basis: 70%; display: flex; justify-content: space-between;">
+            
+            <input type="date" id="filterquery" name="filterquery" size="45" style="width: 46%;" class="form-control border"/>
+
+            <span style="font-size: 18px;
+            margin-top: 6px;">To</span>
+
+            <input type="date" id="filterquery" name="filterquery" size="45" style="width: 46%;" class="form-control border"/>
+        </div>
+        
+    </div>
+
+
+
+
+
+</div>
+
+
+<div style="text-align: center;">
+    <button type="button" class="btn btn-primary submitBtn">Submit</button>
+</div>
+    
+    
+    
+    
+</form>

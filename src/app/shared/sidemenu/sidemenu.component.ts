@@ -44,59 +44,85 @@ export class SidemenuComponent implements OnInit {
 			  link: "/judge-name",
 			},
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Keywords Search",
+			  link: "/keyword-search",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Free Text Search",
+			  link: "/free-text-search",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Book Search",
+			  link: "/book-search",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Act Search",
+			  link: "/act-search",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Notice Notifications",
+			  link: "/notice-notifications",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Email Search",
+			  link: "/email-search",
 			},,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "register-civil",
+			  link: "/register-civil",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "register-criminal",
+			  link: "/register-criminal",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "memo-search",
+			  link: "/memo-search",
 			},
 			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Statement",
+			  link: "/statement",
 			},
-			,
 			{
-			  label: "My profile",
-			  link: "/my-profile",
+			  label: "Service Record",
+			  link: "/service-record",
 			},
-			
+			{
+			  label: "Returns Search",
+			  link: "/returns-search",
+			},
+
+			// adminnnnnn below 
+
+			{
+			  label: "Items",
+			  link: "/items",
+			},
+			{
+				label: "Bulk Delete",
+				link: "/bulk-delete",
+			},
+			{
+				label:"Advance Emails",
+				link:"advance-emails"
+			},
+			{
+				label:"Synonym Management",
+				link:"synonym-management"
+			},
+			{
+				label:"EPeople",
+				link:"e-person"
+			}
+
 		];
   }
 

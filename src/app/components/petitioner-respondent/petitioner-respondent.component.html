@@ -10,7 +10,7 @@
     align-items: center; padding-top: 15px;" >
     <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Case Status</label>
     <div style="flex-basis: 70%;">
-    <select id="caseStatus" name="caseStatus" class="form-control" style="width: 100%;">
+    <select id="caseStatus" name="caseStatus" class="form-control border" style="width: 100%;">
         <option value="select" >Select</option>
         <option value="<%= comHandle%>">All</option>
         <option value="<%= colHandleAllCaseFile%>">Disposed</option>
@@ -22,8 +22,8 @@
     <div class="col-md-12" style=" display: flex; justify-content: space-between;
     align-items: center; padding-top: 15px;" >
     <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Petitioner/Respondent:</label>
-    <div style="flex-basis: 70%;">
-        <select id="filtername" name="filtername" class="form-control" style="width: 100%;">
+    <div style="flex-basis: 70%;"> 
+        <select id="filtername" name="filtername" class="form-control border" style="width: 100%;">
             <option value="pname">Petitioner</option>
             <option value="rname">Respondent</option>
             <option value="any">Any</option>
@@ -39,7 +39,7 @@
 
 <div style="flex-basis: 70%;">
     <div style="display: flex; align-content: center; justify-content: space-between;">
-        <input type="text" id="filterquery" name="filterquery" size="45" style="width: 100%;" class="form-control"/>
+        <input type="text" id="filterquery" name="filterquery" size="45" style="width: 100%;" class="form-control border"/>
     
     </div>
     </div>

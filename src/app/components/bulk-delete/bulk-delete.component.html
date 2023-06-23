@@ -1,0 +1,68 @@
+<h3 class="heading">Bulk Delete</h3>
+
+<form id="my-form-id"  method="get">
+    <div class="row" >
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+
+            <label style="flex-basis: 30%; font-size: 14px;" class="pull-left">Collection *</label>
+            <div style="flex-basis: 70%;">
+
+            <select id="collection" name="location" class="form-control" style="width: 100%;">
+                <option value="">Select</option>
+                <option value="123456789/2">All Case files</option>
+                <option value="123456789/1146"> Emails</option>
+                <option value="123456789/1148"> Memos</option>
+                <option value="123456789/1145"> Notice Notifications</option>
+                <option value="123456789/1147"> Registers Civil</option>
+                <option value="123456789/1170"> Registers Criminal</option>
+                <option value="123456789/1144"> Statutes/Acts</option>
+            </select>
+            </div>
+    </div>
+    
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+
+            <label  style="flex-basis: 30%; font-size: 14px;" class="pull-left">Date Type</label>
+
+            <div style="flex-basis: 70%;">
+
+            <select id="filtername" name="filtername" class="form-control" style="width: 100%;">
+            </select>
+            </div>
+    </div>
+    
+    <input type="hidden" name="filtertype" id= "filtertype" value="equals"/>
+    
+        <div class="col-md-12" style=" display: flex; justify-content: space-between;
+        align-items: center; padding-top: 15px;">		
+            <label style="flex-basis: 30%; font-size: 14px;" class="pull-left">From Date</label>		
+            <div style="flex-basis: 70%;">
+
+                <input type="date" id="filterquery" name="filterquery" size="45" style="width: 100%;" class="form-control border"/>
+            </div>
+        </div>
+        
+        <div class="col-md-12" style=" display: flex; justify-content: space-between;
+        align-items: center; padding-top: 15px;">					
+        <label style="flex-basis: 30%; font-size: 14px;" class="pull-left">To Date</label>	
+        <div style="flex-basis: 70%;">
+
+            <input type="date" id="filterquery" name="filterquery" size="45" style="width: 100%;" class="form-control border"/>
+            
+           </div>
+        </div>
+    
+        
+    
+    
+   
+    </div>
+
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary submitBtn">Go</button>
+    </div>
+    
+    </form>

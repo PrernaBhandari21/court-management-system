@@ -1,1 +1,49 @@
-<p>judge-name works!</p>
+<h3 class="heading">Judge Name/ Judges Name</h3>
+        
+        <form id="my-form-id"  method="get">
+    <div class=" row" >
+    
+    <input type="hidden" id="filtername" name="filtername" value="author"/>
+    <input type="hidden" id="filtertype" name="filtertype" value="contains"/>
+    <input type="hidden" id="redirectjsp" name="redirectjsp" value="/search/jnameResult.jsp"/>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <label class="pull-left"  style="flex-basis: 30%; font-size: 14px;">Case Status:</label>
+        <div style="flex-basis: 70%;">
+        <select id="caseStatus" name="caseStatus" class="form-control border" style="width: 100%;" >
+                <option value="select">Select</option>
+                <option value="<%= comHandleAllCaseFile%>">All</option>
+                <option value="<%= colHandleAllCaseFile%>">Disposed</option>
+                <option value="<%= colHandlePendingCases%>">Pending</option>
+        </select>
+        </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+    <label class="pull-left"  style="flex-basis: 30%; font-size: 14px;">Judge Name/ Judges Name:</label>
+
+    <div style="flex-basis: 70%;">
+    <div style="display: flex; align-content: center; justify-content: space-between;">
+    <input type="text" id="filterquery" style="width: 100%;"  name="filterquery" size="45" class="form-control border"/>
+    
+    </div>
+
+    </div>
+
+    </div>
+    
+    
+    
+   
+            
+    </div>
+    
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary submitBtn">Submit</button>
+    </div>
+
+
+    </form>
+          

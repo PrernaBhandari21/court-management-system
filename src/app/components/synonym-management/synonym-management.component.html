@@ -1,0 +1,34 @@
+<h3 class="heading">Synonym Management</h3>
+
+<form id="my-form-id" method="get">
+    
+     <div class=" row" >
+        <div>
+            <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+            align-items: center;">
+                <label style="flex-basis: 30%; font-size: 17px;">
+                    Select data file to upload
+                </label>
+                <div style="flex-basis: 70%;">
+                    <input type="file" id="filterquery" style="width: 100%;" name="filter_value_1" size="45" class="form-control" autocomplete="off" 
+            />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-md-12" style=" display: flex; justify-content: space-between; align-items: center; padding-top: 15px;">
+        <label style="flex-basis: 30%; font-size: 17px;" class="pull-left">Please Enter Synonym</label>
+        <div style="flex-basis: 70%;">
+            <div style="display: flex; align-content: center; justify-content: space-between;width: 100%;">
+                <input type="text" [(ngModel)]="synonymText" style="width: 87%;" name="filter_value_1" size="45" class="form-control" autocomplete="off" />
+                <button type="button" class="btn btn-info" (click)="search()">Search</button>
+            </div>
+        </div>
+    </div>
+        
+	</form>

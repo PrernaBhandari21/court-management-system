@@ -1,0 +1,15 @@
+form{
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: beige;
+    margin-top: 50px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+mat-form-field{
+    width: 100%;
+}

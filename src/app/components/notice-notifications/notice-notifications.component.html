@@ -1,0 +1,65 @@
+<h3 class="heading">Notice Notifications</h3>
+
+<form id="my-form-id"  method="get">
+    <div class=" row" >
+                
+    <input type="hidden" id="redirectjsp" name="redirectjsp" value="/search/noticeSearch.jsp"/>
+        
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Notice Title:</label>
+        <div style="flex-basis: 70%;">
+            <input type="text" style="width: 100%;" id="filterquery" name="filter_value_1" size="45" class="form-control" autocomplete="off" 
+            />
+            </div>
+    </div>
+    
+    <div class="col-md-12" style=" display: flex; justify-content: space-between;
+    align-items: center; padding-top: 15px;">
+        <input type="hidden" id="filter_field_2" name="filter_field_3" value="noticesCode"/>
+        <input type="hidden" id="filter_type_2" name="filter_type_3" value="equals"/>		
+        <label class="pull-left" style="flex-basis: 30%; font-size: 14px;">Notices Code:</label>
+
+        <div style="flex-basis: 70%;">
+            <div style="display: flex; align-content: center; justify-content: space-between;">
+
+        
+        <input type="text" id="filter_value_2" style="width: 100%;" name="filter_value_3" size="10" 
+            class="form-control" autocomplete="off"
+            />
+
+           
+            </div>
+            </div>
+    </div>			
+    
+
+            <div class="col-md-12 roww" style=" display: flex; justify-content: space-between;
+            align-items: center;">
+                <label style="flex-basis: 30%; font-size: 14px;">
+                    G.R. date :
+                </label>
+                <div style="flex-basis: 70%; display: flex; justify-content: space-between;">
+                    
+                    <input type="date" id="filterquery" name="filterquery" size="45" style="width: 46%;" class="form-control border"/>
+
+                    <span style="font-size: 18px;
+                    margin-top: 6px;">To</span>
+
+                    <input type="date" id="filterquery" name="filterquery" size="45" style="width: 46%;" class="form-control border"/>
+                </div>
+                
+            </div>
+
+
+
+
+
+	</div>
+	
+        
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-primary submitBtn">Submit</button>
+        </div>
+</form>

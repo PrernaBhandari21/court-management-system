@@ -13,3 +13,19 @@ mat-list-item{
 mat-list-item:hover{
     background: beige;
 }
+
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMKbdrmu9v5UuQgKSfywu5Fb1FXDHdr0umgSL8HkhCZPb-KfYHQPsZ54pyy8iKi5Mtw&usqp=CAU);
+}
+
+.border{
+    border: 1px solid !important;
+}
