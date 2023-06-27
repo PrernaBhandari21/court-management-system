@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showDropdown: boolean = false;
+
+  toggleDropdown(event: MouseEvent) {
+    this.showDropdown = !this.showDropdown;
+    event.stopPropagation();
+  }
+
 }

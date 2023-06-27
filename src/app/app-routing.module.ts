@@ -22,6 +22,8 @@ import { AdvanceEmailsComponent } from './components/advance-emails/advance-emai
 import { SynonymManagementComponent } from './components/synonym-management/synonym-management.component';
 import { EPeopleComponent } from './components/e-people/e-people.component';
 import { AddEditEPersonComponent } from './add-edit-eperson/add-edit-eperson.component';
+import { LoginComponent } from './shared/login/login.component';
+import { RegisterComponent } from './shared/register/register.component';
 
 const routes: Routes = [
   {
@@ -115,6 +117,14 @@ const routes: Routes = [
   {
     path:"addEditEPerson",
     component:AddEditEPersonComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"register",
+    component:RegisterComponent
   }
 
 ];

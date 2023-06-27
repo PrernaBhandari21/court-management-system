@@ -40,6 +40,8 @@ import { AdvanceEmailsComponent } from './components/advance-emails/advance-emai
 import { SynonymManagementComponent } from './components/synonym-management/synonym-management.component';
 import { EPeopleComponent } from './components/e-people/e-people.component';
 import { AddEditEPersonComponent } from './add-edit-eperson/add-edit-eperson.component';
+import { LoginComponent } from './shared/login/login.component';
+import { RegisterComponent } from './shared/register/register.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { AddEditEPersonComponent } from './add-edit-eperson/add-edit-eperson.com
     SynonymManagementComponent,
     EPeopleComponent,
     AddEditEPersonComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

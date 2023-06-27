@@ -1,0 +1,26 @@
+.header{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMKbdrmu9v5UuQgKSfywu5Fb1FXDHdr0umgSL8HkhCZPb-KfYHQPsZ54pyy8iKi5Mtw&usqp=CAU);
+}
+
+.user-profile{
+    width: 100%;
+    text-align: end;
+}
+
+.user-profile img{
+    width: 2.5%;
+    cursor: pointer;
+}
+
+.logout-text{
+    margin: 10px;
+    background: white;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.logout-text:hover{
+    color: blue;
+}

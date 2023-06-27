@@ -1,0 +1,53 @@
+<div class="header-container">
+  <h1 class="heading">Court Management System</h1>
+  <div class="header"></div>
+</div>
+
+<div class="login__container">
+
+    <div class="loginImg__Container">
+      <img src="https://img.freepik.com/free-vector/sign-page-abstract-concept-illustration_335657-3875.jpg?w=740&t=st=1687174394~exp=1687174994~hmac=2826c940169f61cb522e2970ec4cf960dbdcfb2130a1ad408948deec0941ba49" alt="">
+    </div>
+
+
+    <div class="row justify-content-center mt-5 login__form">
+      <div class="col-md-12">
+        <h1 class="text-center mb-4">Register</h1>
+        <form (ngSubmit)="onSubmit()" class="login-form">
+
+          <div class="form-group">
+            <label for="userType">Select User Type</label>
+            <select class="form-control" id="userType" [(ngModel)]="userType" name="userType">
+              <option value="admin">Admin User</option>
+              <option value="advocate">Advocate User</option>
+              <option value="nodal">Nodal User</option>
+              <option value="court">Court User</option>
+            </select>
+          </div>
+          
+          <div class="form-group mt-3">
+            <label for="username">Enter Username</label>
+            <input type="text" class="form-control mt-1" id="username" placeholder="Username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="form-group mt-3">
+            <label for="password">Enter Password</label>
+            <input type="password" class="form-control mt-1" id="password" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="password">Re-Enter Password</label>
+            <input type="password" class="form-control mt-1" id="re_password" placeholder="Enter the Password again" [(ngModel)]="re_password" [ngModelOptions]="{standalone: true}">
+          </div> 
+
+          
+          <div style="display: flex;align-items: center;margin-top: 10px;">
+          <button type="submit" class="btn btn-primary btn-block ">Register</button>
+          <p style="margin-left: 10px;margin-top: 10px;">Already Registered? <a routerLink="/login">Login Here</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+  

@@ -23,7 +23,7 @@ mat-list-item:hover{
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMKbdrmu9v5UuQgKSfywu5Fb1FXDHdr0umgSL8HkhCZPb-KfYHQPsZ54pyy8iKi5Mtw&usqp=CAU);
+    /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMKbdrmu9v5UuQgKSfywu5Fb1FXDHdr0umgSL8HkhCZPb-KfYHQPsZ54pyy8iKi5Mtw&usqp=CAU); */
 }
 
 .border{
